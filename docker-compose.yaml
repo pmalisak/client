@@ -1,0 +1,9 @@
+version: "3"
+services:
+    php:
+        container_name: php
+        build: ./nginx-php
+        volumes:
+            - ./:/var/www/html
+        ports:
+            - "80:8080"
